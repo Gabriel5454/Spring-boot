@@ -1,0 +1,70 @@
+type: collection.insomnia.rest/5.0
+name: SpringBoot
+meta:
+  id: wrk_546d87c6ae604fee990a0f47141ec547
+  created: 1742426345598
+  modified: 1742431095787
+collection:
+  - url: localhost:8080/api/v1/alunos
+    name: New Request
+    meta:
+      id: req_400efd61af8e47a189b45348a54995fa
+      created: 1742431200717
+      modified: 1742431292031
+      isPrivate: false
+      sortKey: -1742431200717
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome":"Claudio",
+        	"idade":"15",
+        	"cpf":"1231312"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8080/api/v1/alunos
+    name: New Request
+    meta:
+      id: req_a8881d3898f94554bb388c8b9509323c
+      created: 1742431202048
+      modified: 1742432091666
+      isPrivate: false
+      sortKey: -1742431202048
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9302afbd3452e6ed4898903e3de817f84aa35593
+    created: 1742431095826
+    modified: 1742431095826
+environments:
+  name: Base Environment
+  meta:
+    id: env_9302afbd3452e6ed4898903e3de817f84aa35593
+    created: 1742426345601
+    modified: 1742431095785
+    isPrivate: false
